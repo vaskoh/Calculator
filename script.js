@@ -1,21 +1,25 @@
+let result = document.getElementById('result');
+
 function appendNumber(number) {
-    document.getElementById('result').value += number;
+    result.value += number;
 }
 
 function appendOperator(operator) {
-    document.getElementById('result').value += operator;
+    result.value += operator;
 }
 
 function calculateResult() {
-    let result = eval(document.getElementById('result').value);
-    document.getElementById('result').value = result;
+    try {
+        result.value = eval(result.value);
+    } catch (error) {
+        result.value = 'Error';
+    }
 }
 
 function clearResult() {
-    document.getElementById('result').value = '';
+    result.value = '';
 }
 
-function deleteLast() {
-    let result = document.getElementById('result').value;
-    document.getElementById('result').value = result.slice(0, -1);
+function deleteLastChar() {
+    result.value = result.value.slice(0, -1);
 }

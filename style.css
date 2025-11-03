@@ -9,8 +9,9 @@
 
 .display {
     background-color: #f9f9f9;
-    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -31,12 +32,12 @@
 .keys button {
     padding: 15px;
     font-size: 18px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #eee;
+    background-color: #f0f0f0;
 }
 
 .keys button:hover {
-    background-color: #ddd;
+    background-color: #e0e0e0;
 }
